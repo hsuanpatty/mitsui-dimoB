@@ -422,11 +422,13 @@ input{
   }
 }
 
-@media (max-width: 797.98px) { 
+@media (max-width: 1199.98px) { 
   .cruise-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
+
 
 @media (max-width: 575.98px) { 
   .cruise-grid {
@@ -524,6 +526,18 @@ input{
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .cruise-info h3 {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  .cruise-info {
+   padding: 15px 1rem 18px;
+  }
+}
+
 
 /* 郵輪航程 頁數 */
 .page_box {
