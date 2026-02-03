@@ -1078,14 +1078,13 @@ input{
     line-height: 0;              
     
     box-sizing: border-box;
-    padding: 1px 0 0 2px;
+    padding: 2px 0 0 2px;
                     
     transition: transform 0.3s ease;
 }
 
 .mitsui-faq-item.active .faq-icon {
     transform: rotate(45deg);
-    padding: 1px 0 0 0;
 }
 
 .faq-answer h3 {
