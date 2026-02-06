@@ -127,6 +127,7 @@ header{
 .voyage-title h2 {
   color: var(--eerie-black);
   font-weight: 500;
+  line-height: 38px;
 }
 
 .voyage-title h3 {
