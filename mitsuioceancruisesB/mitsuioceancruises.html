@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,7 +27,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/news-modal.css" />
+    <!-- <link rel="stylesheet" href="./css/news-modal.css" />
+    <link rel="stylesheet" href="./css/www-player.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
@@ -56,9 +57,11 @@
       </div>
 
       <div class="toast-detail">
-        <p class="toast-title">三井海洋郵輪</p>
-        <p class="toast-message">豪華郵輪‧全程驚喜不斷</p>
-        <p class="toast-meta">早鳥優惠中2026搶先預約</p>
+        <a href="#" target="_blank">
+          <p class="toast-title">三井海洋郵輪</p>
+          <p class="toast-message">豪華郵輪‧全程驚喜不斷</p>
+          <p class="toast-meta">早鳥優惠中2026搶先預約</p>
+        </a>
       </div>
     </div>
     <!-- 主導航區塊 -->
@@ -73,10 +76,10 @@
       <div class="container">
         <ul class="desktop-menu-category-list">
           <li class="menu-category">
-            <a href="./mitsuioceancruises.html" class="menu-title">Home</a>
+            <a href="./mitsuioceancruises.html" class="menu-title">首頁</a>
           </li>
           <li class="menu-category">
-            <a href="#" class="menu-title">船介紹 <i class="fa-solid fa-angle-down fa-xs"></i></a>
+            <a href="#" class="menu-title">船隊 <i class="fa-solid fa-angle-down fa-xs"></i></a>
             <ul class="dropdown-list">
               <li class="dropdown-item">
                 <a href="./onboard-fuji.html">三井海洋富士號</a>
@@ -88,7 +91,7 @@
             <a href="./excursion.html" class="menu-title">郵輪行程</a>
           </li>
           <li class="menu-category">
-            <a href="./download.html" class="menu-title">資訊下載</a>
+            <a href="./download.html" class="menu-title">相關下載</a>
           </li>
         </ul>
       </div>
@@ -231,7 +234,7 @@
       <ul class="mobile-menu-category-list">
         <li class="menu-category">
           <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">船介紹</p>
+            <p class="menu-title">船隊</p>
             <div class="caret-btn">
               <svg class="add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="none">
                 <path d="M256 112v288M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
@@ -254,7 +257,7 @@
           <a href="./excursion.html" class="menu-title">郵輪行程</a>
         </li>
         <li class="menu-category">
-          <a href="./download.html" class="menu-title">資訊下載</a>
+          <a href="./download.html" class="menu-title">相關下載</a>
         </li>
       </ul>
     </nav>
@@ -490,8 +493,113 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="movie-section">
+            <div class="movie-title">
+              <h2>介紹影片</h2>
+              <div class="border-title"></div>
+            </div>
+
+            <div class="movie-box">
+              <div class="movie-item">
+                <div class="top-movie-panel js-modal-youtube">
+                  <a href="#modal-01" class="top-movie-panel__media js-modal-youtube__hook">
+                    <img src="./images/yt/youtube_tumb-1.jpg" alt="MITSUI OCEAN SAKURA" />
+                  </a>
+                  <p class="top-movie-panel__title">MITSUI OCEAN SAKURA</p>
+                </div>
+              </div>
+              <div class="movie-item">
+                <div class="top-movie-panel js-modal-youtube">
+                  <a href="#modal-02" class="top-movie-panel__media js-modal-youtube__hook">
+                    <img src="./images/yt/youtube_tumb-2.jpg" alt="MITSUI OCEAN FUJI" />
+                  </a>
+                  <p class="top-movie-panel__title">MITSUI OCEAN FUJI</p>
+                </div>
+              </div>
+              <div class="movie-item">
+                <div class="top-movie-panel js-modal-youtube">
+                  <a href="#modal-03" class="top-movie-panel__media js-modal-youtube__hook">
+                    <img src="./images/yt/youtube_tumb-3.jpg" alt="MITSUI OCEAN CRUISES" />
+                  </a>
+                  <p class="top-movie-panel__title">MITSUI OCEAN CRUISES</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Modal -->
+    <div class="modal-area">
+      <div id="modal-01" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+              <path
+                d="M400 145.49L366.51 112 256 222.51
+             145.49 112 112 145.49 222.51 256
+             112 366.51 145.49 400 256 289.49
+             366.51 400 400 366.51 289.49 256z"
+              />
+            </svg>
+          </span>
+          <iframe
+            src=""
+            data-src="https://www.youtube.com/embed/jOpqpmDxFKI?autoplay=1&mute=1&rel=0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="modal-02" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+              <path
+                d="M400 145.49L366.51 112 256 222.51
+             145.49 112 112 145.49 222.51 256
+             112 366.51 145.49 400 256 289.49
+             366.51 400 400 366.51 289.49 256z"
+              />
+            </svg>
+          </span>
+          <iframe
+            src=""
+            data-src="https://www.youtube.com/embed/fWB5mMG4sf4?autoplay=1&mute=1&rel=0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="modal-03" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+              <path
+                d="M400 145.49L366.51 112 256 222.51
+             145.49 112 112 145.49 222.51 256
+             112 366.51 145.49 400 256 289.49
+             366.51 400 400 366.51 289.49 256z"
+              />
+            </svg>
+          </span>
+          <iframe
+            src=""
+            data-src="https://www.youtube.com/embed/FHU6LJE65Hk?autoplay=1&mute=1&rel=0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- //Modal -->
+
+    <!-- /// -->
     <footer id="site-footer">
       <div class="footer-nav">
         <div class="container">
@@ -534,5 +642,35 @@
     <script src="./js/script.js"></script>
     <!-- 其他額外功能 -->
     <script src="./js/theme.js"></script>
+
+    <!-- 2.. -->
+    <script>
+      const modalHooks = document.querySelectorAll(".js-modal-youtube__hook");
+
+      // 點縮圖打開對應 modal
+      modalHooks.forEach((hook) => {
+        hook.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetId = hook.getAttribute("href");
+          const modal = document.querySelector(targetId);
+          const iframe = modal.querySelector("iframe");
+
+          iframe.src = iframe.dataset.src;
+          modal.classList.add("active");
+        });
+      });
+
+      // 關閉 modal（只允許按 X）
+      document.querySelectorAll(".modal").forEach((modal) => {
+        const iframe = modal.querySelector("iframe");
+        const closeBtn = modal.querySelector(".modal-close");
+
+        closeBtn.addEventListener("click", () => {
+          modal.classList.remove("active");
+          iframe.src = ""; // 停止影片
+        });
+      });
+    </script>
   </body>
 </html>
