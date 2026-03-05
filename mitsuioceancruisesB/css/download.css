@@ -183,19 +183,21 @@ header{
   margin-bottom: 0.5em;
 }
 
-.m-download-link__link {
+.m-download-link__link{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 5px 12px 5px;
-  border-bottom:1px solid var(--spanish-gray) ;
+  padding: 12px 5px;
+  border-bottom: 1px solid var(--spanish-gray);
   color: var(--eerie-black);
   text-decoration: none;
-  position: relative;
   transition: 0.3s cubic-bezier(0.25,0.8,0.25,1);
-
-  height: auto;
 }
+
+.m-download-link__item:first-child .m-download-link__link{
+  padding-top: 0;
+}
+
 
 .m-download-link__link:hover {
     color: var(   --spanish-gray);
@@ -289,7 +291,7 @@ header{
 }
 
 .contact-info a:nth-child(n+3) .contact-card {
-    margin: auto;
+  margin: auto;
 }
 
 .contact-card img {
