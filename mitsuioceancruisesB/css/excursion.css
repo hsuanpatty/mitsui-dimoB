@@ -312,6 +312,13 @@ input{
   }
 }
 
+@media (max-width: 1399.98px){
+  .cruise-form {
+    gap: 4px;
+    padding: 20px 0;
+  }
+}
+
 @media (max-width: 1199.98px){
   .cruise-form {
     grid-template-columns: repeat(6, 1fr);
@@ -325,6 +332,11 @@ input{
     grid-column: 5 / 7;  
     display: flex;
     justify-content: flex-end;
+  }
+
+   .cruise-form {
+    gap: 16px;
+    padding: 20px ;
   }
   .cruise-form__item label {
     text-align: left;
