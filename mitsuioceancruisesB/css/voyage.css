@@ -87,7 +87,6 @@ header{
 .breadcrumb-item {
   display: flex;
   align-items: center;
-  white-space: nowrap;
   font-weight: 400;
 }
 
