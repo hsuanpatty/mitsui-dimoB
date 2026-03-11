@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 展開自己
       item.classList.add("active");
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = content.scrollHeight + 40 + "px";
     });
   });
 
@@ -167,6 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (first) {
     const firstContent = first.querySelector(".type-text");
     first.classList.add("active");
-    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+    firstContent.style.maxHeight = firstContent.scrollHeight + 40 + "px";
   }
 });
