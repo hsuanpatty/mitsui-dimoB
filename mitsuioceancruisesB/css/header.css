@@ -474,7 +474,7 @@ input{
     .desktop-menu-category-list .menu-category > .menu-title {
         position: relative;
         color: var(--white);
-        font-size: var(--fs-5);
+        font-size: var(--fs-4);
         font-weight: var(--weight-500);
         text-transform: uppercase;
         padding: 15px 0;
@@ -570,7 +570,7 @@ input{
     
     .dropdown-list .dropdown-item a {
         color: var(--eerie-black);
-        font-size: var(--fs-7);
+        font-size: var(--fs-6);
         text-transform: capitalize;
         padding: 8px 20px;
         transition: var(--transition-timing);
