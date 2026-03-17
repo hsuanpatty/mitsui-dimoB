@@ -48,7 +48,7 @@
       </div>
     </nav>
 
-    <!-- 桌面菜單 -->
+    <!-- 桌機選單 -->
     <nav class="desktop-navigation-menu">
       <div class="container">
         <ul class="desktop-menu-category-list">
@@ -75,6 +75,72 @@
         </ul>
       </div>
     </nav>
+
+    <!-- 手機側邊選單 -->
+    <nav class="mobile-navigation-menu" data-mobile-menu>
+      <div class="menu-top">
+        <a href="{{首頁連結}}"><h2 class="menu-title">三井海洋郵輪</h2></a>
+        <button class="menu-close-btn" data-mobile-menu-close-btn aria-label="Close menu">
+          <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+            <path d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256z" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="./mitsuioceancruises.html" class="menu-title">首頁</a>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">船隊</p>
+            <div class="caret-btn">
+              <svg class="add-icon" viewBox="0 0 512 512" width="16" height="16" fill="none">
+                <path d="M256 112v288M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
+              </svg>
+              <svg class="remove-icon" viewBox="0 0 512 512" width="16" height="16" fill="none">
+                <path d="M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
+              </svg>
+            </div>
+          </button>
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="./onboard-fuji.html">三井海洋富士號</a>
+            </li>
+            <li class="submenu-category">
+              <a href="./onboard-sakura.html">三井海洋櫻花號</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <a href="./excursion.html" class="menu-title">郵輪行程</a>
+        </li>
+        <li class="menu-category">
+          <a href="./download.html" class="menu-title">相關資訊</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 手機底部導航 -->
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn menu-outline" data-mobile-menu-open-btn>
+        <svg viewBox="0 0 512 512" width="26" height="26">
+          <path d="M80 160h352M80 256h352M80 352h352" stroke="currentColor" stroke-width="32" fill="none" stroke-linecap="round" />
+        </svg>
+      </button>
+      <a href="./mitsuioceancruises.html" class="action-btn home-outline">
+        <svg viewBox="0 0 512 512" width="26" height="26">
+          <path
+            d="M80 212L256 64l176 148v236a20 20 0 0 1-20 20H100a20 20 0 0 1-20-20V212z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="32"
+            stroke-linejoin="round"
+          />
+          <path d="M192 448V288h128v160" fill="none" stroke="currentColor" stroke-width="32" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
 
     <header>
       <div class="banner hidden slider">
@@ -170,80 +236,6 @@
         </div>
       </div>
     </header>
-
-    <!-- 手機底部導航 -->
-    <div class="mobile-bottom-navigation">
-      <!-- menu 按鈕 -->
-      <button class="action-btn menu-outline" data-mobile-menu-open-btn>
-        <svg viewBox="0 0 512 512" width="26" height="26">
-          <path d="M80 160h352M80 256h352M80 352h352" stroke="currentColor" stroke-width="32" fill="none" stroke-linecap="round" />
-        </svg>
-      </button>
-
-      <!-- home 按鈕 -->
-      <a href="./mitsuioceancruises.html" class="action-btn home-outline">
-        <svg viewBox="0 0 512 512" width="26" height="26">
-          <path
-            d="M80 212L256 64l176 148v236a20 20 0 0 1-20 20H100a20 20 0 0 1-20-20V212z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="32"
-            stroke-linejoin="round"
-          />
-          <path d="M192 448V288h128v160" fill="none" stroke="currentColor" stroke-width="32" stroke-linejoin="round" />
-        </svg>
-      </a>
-    </div>
-
-    <div class="mobile-menu-overlay"></div>
-
-    <!-- 手機側邊菜單 -->
-    <nav class="mobile-navigation-menu" data-mobile-menu>
-      <div class="menu-top">
-        <a href="./mitsuioceancruises.html"><h2 class="menu-title">三井海洋郵輪</h2></a>
-        <button class="menu-close-btn" data-mobile-menu-close-btn aria-label="Close menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
-            <path
-              d="M400 145.49L366.51 112 256 222.51
-                 145.49 112 112 145.49 222.51 256
-                 112 366.51 145.49 400 256 289.49
-                 366.51 400 400 366.51 289.49 256z"
-            />
-          </svg>
-        </button>
-      </div>
-      <ul class="mobile-menu-category-list">
-        <li class="menu-category">
-          <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">船隊</p>
-            <div class="caret-btn">
-              <svg class="add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="none">
-                <path d="M256 112v288M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
-              </svg>
-
-              <!-- − -->
-              <svg class="remove-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="none">
-                <path d="M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
-              </svg>
-            </div>
-          </button>
-          <ul class="submenu-category-list">
-            <li class="submenu-category">
-              <a href="./onboard-fuji.html">三井海洋富士號</a>
-            </li>
-            <li class="submenu-category">
-              <a href="./onboard-sakura.html">三井海洋櫻花號</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-category">
-          <a href="./excursion.html" class="menu-title">郵輪行程</a>
-        </li>
-        <li class="menu-category">
-          <a href="./download.html" class="menu-title">相關資訊</a>
-        </li>
-      </ul>
-    </nav>
 
     <main>
       <!-- 三井海洋富士號 -->
@@ -574,10 +566,10 @@
       <section>
         <div class="container">
           <div class="row justify-content vessel-box">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-5 col-xl-5">
               <img src="./images/fuji/vessel-1.jpg" alt="三井海洋富士號" />
             </div>
-            <div class="col-12 col-md-8 col-xl-5">
+            <div class="col-12 col-md-7 col-xl-5">
               <div class="mitsui-title">
                 <h2>MITSUI OCEAN FUJI</h2>
                 <div class="border-title2"></div>
