@@ -399,7 +399,7 @@ input{
   }
 
 .modal__inner {
-    height: 100vh;         
+    height: 85vh;         
     overflow: hidden;     
     padding: 2.5rem 2rem;
     width: 100%;
@@ -447,7 +447,8 @@ input{
 }
 
 @media (max-width: 450.98px) {
-  .modal__inner {      
+  .modal__inner {    
+    height: 100vh;      
     max-height: 100vh;
   }
 }
