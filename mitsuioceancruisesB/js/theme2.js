@@ -63,7 +63,7 @@ $(".banner-img").slick({
     }
   }
 
-  for (let i = 1; i <= 30; i++) {
+  for (let i = 1; i <= 50; i++) {
     initProductSlider(`#product-slider-main${i}`, `.product-slider-nav${i}`);
   }
 
