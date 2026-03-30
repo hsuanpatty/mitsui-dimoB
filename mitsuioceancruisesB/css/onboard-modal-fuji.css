@@ -680,34 +680,8 @@ input{
   #product-slider__nav {
     display: none;
   }
-
-  .product-slider__main .slick-slide {
-      height: 180px;
-  }
 }
 
-@media (max-width: 575.98px) {
-
-
-  .product-slider__main .slick-slide {
-      height: 230px;
-  }
-
-  .product-slider__main .slick-next {
-    right: 0;
-  }
-
-  .product-slider__main .slick-prev {
-    left: 0;
-  }
-}
-
-@media (max-width: 375.98px) { 
-
-  .product-slider__main .slick-slide {
-      height: 150px;
-  }
-}
 
 /* @media (min-width: 1200px) { 
   #product-slider__nav .slick-slide {
@@ -1010,7 +984,9 @@ input{
     font-size: 15px;
   }
 
-
+  .modal-box p {
+    padding-top: 0;
+  }
 }
 
 
@@ -1537,6 +1513,12 @@ input{
   }
 }
 
+@media (max-width: 991.98px) { 
+  .details-wrapper {
+    min-height: 320px;
+  }
+}
+
 @media (max-width: 575.98px) { 
   .deck-grid {
     gap: 10px;
@@ -1548,7 +1530,7 @@ input{
   } 
 
   .details-wrapper {
-    min-height: 300px; /* 根據內容調整 */
+    min-height: 300px; 
   }
 
   .mitsui-py {
