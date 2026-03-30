@@ -198,8 +198,15 @@ input{
 }
 
 .modal-row {
-  align-items: flex-start !important;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 20px;
+
+    justify-content: center;
+    align-items: flex-start !important;
 }
+
 
 /* 選單 */
 @media (min-width: 768px) {
@@ -278,11 +285,6 @@ input{
   color: #fff;
 }
 
-.js-modal {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
 .js-modal .modal__inner {
   transform: translateY(100%);
   opacity: 0;
@@ -321,15 +323,6 @@ input{
   justify-content: center;
 }
 
-.modal-row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px 0 20px;
-
-    justify-content: center;
-    align-items: center;
-}
 
 .modal-row h2 {
     font-size: 30px;
@@ -379,28 +372,29 @@ input{
 
 @media (max-width: 1399.98px) { 
   .modal__inner {
-    height: auto;         
+    height: auto; 
   }
 }
 
 @media (max-width: 1299.98px) { 
   .modal__inner {        
-    width: 82%;
+    width: 75%;
     padding-bottom: 2.5rem;
   }
 }
 
 @media (max-width: 1030.98px) { 
   .modal__inner {        
-    width: 70%;
+    width: 90%;
   }
 }
 
 @media (max-width: 991.98px) { 
-  .modal__inner {      
-    width: 90%;
+  .modal__inner {        
+    width: 95%; 
   }
-}  
+}
+
 @media (max-width: 767.98px) { 
   .modal-row h4 {
     letter-spacing: 0.1rem;
