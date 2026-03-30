@@ -681,21 +681,13 @@ input{
     display: none;
   }
 
-  .product-slider__main.object-fit--contain .slick-slide img {
-    height: 180px;
-    width: 300px;
-  }
-
   .product-slider__main .slick-slide {
       height: 180px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .product-slider__main.object-fit--contain .slick-slide img {
-    height: 230px;
-    width: 410px;
-  }
+
 
   .product-slider__main .slick-slide {
       height: 230px;
@@ -711,10 +703,6 @@ input{
 }
 
 @media (max-width: 375.98px) { 
-  .product-slider__main.object-fit--contain .slick-slide img {
-    height: 150px;
-    width: 100%;
-  }
 
   .product-slider__main .slick-slide {
       height: 150px;
@@ -1348,7 +1336,31 @@ input{
   .spares {
     padding: 20px 0 0;
   }
+
+  .customScroll {
+    max-height: 75vh;
+  }
 }
+
+@media (max-width: 390.98px) { 
+  .customScroll {
+    max-height: 66vh;
+  }
+}
+
+
+@media (max-width: 376.98px) { 
+  .customScroll {
+    max-height: 58vh;
+  }
+}
+
+@media (max-width: 360.98px) { 
+  .customScroll {
+    max-height: 60vh;
+  }
+}
+
 
 
 /* 娛樂 */
