@@ -216,7 +216,8 @@ input{
 
 .modal__inner {
   max-height: 96vh;
-  overflow-y: auto;
+  overflow: hidden;
+  max-height: none !important;
   background: #fff;
   border-radius: 10px;
   padding: 2rem;
@@ -372,17 +373,30 @@ input{
 
 @media (max-width: 1399.98px) { 
   .modal__inner {
-    height: 90vh;         
-    max-height: 96vh;
+    height: auto; 
   }
 }
 
 @media (max-width: 1299.98px) { 
-  .modal__inner {
-    height: 85vh;         
-    max-height: 85vh;
+  .modal__inner {        
+    width: 82%;
+    padding-bottom: 2.5rem;
   }
 }
+
+@media (max-width: 1030.98px) { 
+  .modal__inner {        
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 991.98px) { 
+  .modal__inner {        
+    width: 90%;
+  }
+}
+
 @media (max-width: 767.98px) { 
   .modal-row h4 {
     letter-spacing: 0.1rem;
@@ -1223,6 +1237,7 @@ input{
   padding-top: 50px;
 }
 
+
 @media (max-width: 1399.98px) {
   .faq-container {
     width: 100%;
@@ -1245,6 +1260,24 @@ input{
   }
 }
 
+@media (max-width: 1199.98px) {
+  .customScroll {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 1030.98px) {
+  .customScroll {
+    max-height: 54vh;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .customScroll {
+    max-height: 63vh;
+  }
+}
+
 @media (max-width: 767.98px) {
   .warn {
     padding: 30px 20px 0;
@@ -1254,6 +1287,7 @@ input{
     padding: 20px 20px 0;
   }
 }
+
 
 @media (max-width: 575.98px) {
   .modal-row br {
@@ -1322,6 +1356,19 @@ input{
   }
 }
 
+@media (max-width: 540.98px) { 
+  .customScroll {
+    max-height: 52vh;
+  }
+}
+
+@media (max-width: 440.98px) { 
+  .customScroll {
+    max-height: 70vh;
+  }
+}
+
+
 @media (max-width: 390.98px) { 
   .customScroll {
     max-height: 66vh;
@@ -1337,9 +1384,16 @@ input{
 
 @media (max-width: 360.98px) { 
   .customScroll {
-    max-height: 60vh;
+    max-height: 62vh;
   }
 }
+
+@media (max-width: 350.98px) { 
+  .customScroll {
+    max-height: 68vh;
+  }
+}
+
 
 
 
