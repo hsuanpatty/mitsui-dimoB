@@ -1407,7 +1407,7 @@ input{
   overflow: hidden;
   width: 80%;
   margin: 20px auto 0;
-  min-height: 550px; /* 根據內容調整 */
+  min-height: 460px; /* 根據內容調整 */
 }
 
 .details {
@@ -1641,6 +1641,10 @@ input{
 
   .vessel-box .border-title2 {
     padding-bottom: 0;
+  }
+
+  .deck-bg .mitsui-title {
+    padding-top: 40px;
   }
 }
 
