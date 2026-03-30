@@ -670,20 +670,12 @@ input{
     padding-left: 16px;
 }
 
-/* @media (min-width: 1200px) { 
-  #product-slider__nav .slick-slide {
-    margin-right: 4.5rem !important;
+@media (max-width: 767.98px) {
+  #product-slider__nav {
+    display: none;
   }
-} */
+}
 
-/* @media (min-width: 1400px) { 
-  #product-slider__nav .slick-slide {
-    margin-right: 3.8rem !important;
-  }
-} */
-
-
-/* 版 */
 
 /* 外層置中 */
 .onboard-box {
@@ -967,6 +959,9 @@ input{
     font-size: 15px;
   }
 
+  .modal-box p {
+    padding-top: 0;
+  }
 
 }
 
@@ -1498,6 +1493,12 @@ input{
   }
 }
 
+@media (max-width: 991.98px) { 
+  .details-wrapper {
+    min-height: 330px;
+  }
+}
+
 @media (max-width: 575.98px) { 
   .deck-grid {
     gap: 10px;
@@ -1509,7 +1510,7 @@ input{
   } 
 
   .details-wrapper {
-    min-height: 300px; /* 根據內容調整 */
+    min-height: 300px; 
   }
 
 }
