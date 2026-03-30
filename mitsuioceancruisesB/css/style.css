@@ -358,14 +358,6 @@ input{
   }
 }
 
-@media (max-width: 991.98px){
-  .swiper-slide-caption>h3 {
-    font-size: 36px;
-  }
-}
-
-
-
 
 /* 768px 以下 */
 @media (max-width: 767.98px){
@@ -373,6 +365,10 @@ input{
     width: 100%;
     object-fit: cover; 
     display: block;
+  }
+
+   .swiper-slide-caption>h3 {
+    font-size: 32px;
   }
 }
 
