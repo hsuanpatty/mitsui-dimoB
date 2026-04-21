@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+  font-family: 'GenKiMin-R';
+  src: url('../fonts/GenKiMin2PJP-R.otf')  format("opentype");
+}
+
+body {
+  font-family: 'GenKiMin-R', sans-serif;
+}
+
+:root{
+
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --mitsui-blue: #005396;
+    --deck-blue: #083050;
+    --m2-blue: #005396;
+    --m3-blue: #0967b4;
+    --sandy-brown: hsl(29, 90%, 65%);
+    --bittersweet: hsl(0, 100%, 70%);
+    --mitsui-red: #EB4343;
+    --mitsui-red2: #FF0707;
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+    --brown: #D7C5AE;
+    --dreck-gray: #F9F9F9;
+    --search-blue: #F2F6FA;
+    --beige: #FFE9CD;
+    --grayblue: #637787;
+
+    --fs-1: 1.563rem;
+    --fs-2: 1.375rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.125rem;
+    --fs-5: 1rem;
+    --fs-6: .938rem;
+    --fs-7: .875rem;
+    --fs-8: .813rem;
+    --fs-9: .75rem;
+    --fs-10: .688rem;
+    --fs-11: .625rem;
+
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+
+    --border-radius-medium: 10px;
+    --border-radius-small: 5px;
+
+    --transition-timing: .2s ease;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+li,
+section,
+header{
+  font-family: 'GenKiMin-R';
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767.98px) {
+    .container, .container-sm {
+        max-width: 580px;
+    }
+}
+
+
+/*頁頭標籤 */
+.breadcrumb-wrapper {
+  padding: 20px 0 5px;
+  font-size: 16px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  line-height: 30px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.breadcrumb-item a {
+  color: #000; 
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--m2-blue);
+  text-decoration: none;
+}
+
+/* 箭頭 */
+.breadcrumb-item:not(:last-child)::after {
+  content: "\f105"; 
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  color: #999;
+  margin: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 最後一個文字顏色 */
+.breadcrumb-item.current {
+  color: var(--m2-blue);
+  font-weight: 500;
+}
+
+
+/* 行程介紹開始 */
+.voyage-title {
+  padding: 50px 0 10px;
+  text-align: center;
+} 
+
+.voyage-title h2 {
+  color: var(--eerie-black);
+  font-weight: 500;
+  line-height: 38px;
+
+  letter-spacing: 0.1rem;
+  padding-bottom: 10px;
+}
+
+.voyage-title h3 {
+  position: relative;         
+  margin: 10px 0;
+  font-weight: 500;
+  color: var(--m2-blue);
+  padding-left: 0;    
+  line-height: 25px;    
+}
+
+/* span 框樣式 */
+.voyage-title h3 span {
+  display: inline-block;
+  position: static; 
+  margin-right: 8px;
+  top: 0;
+  padding: 2px 8px;
+  border: 1px solid var(--m2-blue);
+  border-radius: 4px;
+  background-color: #f0f8ff;
+  font-weight: 600;
+  white-space: nowrap;       
+}
+
+/* 文字內容自動對齊 span 後方 */
+.voyage-title h3 .text-content {
+  display: block;
+  margin-left: calc(15px + 8px*2 + 1px*2); /* 左間距 + span padding + 邊框 */
+}
+
+.voyage-title h4 {
+  display: inline-block;       
+  padding: 6px 14px;          
+  border: 1px solid var(--m2-blue);  
+  font-size: 1rem;            
+  font-weight: 500;           
+  letter-spacing: 0.05rem;
+  color: var(--eerie-black);  
+  margin-top: 5px;           
+}
+
+/* 桌面版（寬度大於 767px） */
+@media (min-width: 768px) {
+  .voyage-title h3 {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+    padding-left: 0;           
+  }
+
+  .voyage-title h3 span:first-child {
+    font-size: 18px;   
+    white-space: nowrap;               
+  }
+}
+
+/* 手機板專用 */
+@media (max-width: 767px) {
+
+  .voyage-title h3 span:first-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .voyage-title {
+    padding: 25px 0 20px;
+  }
+}
+
+/* 行程 表格 */
+.it {
+  position: relative; 
+}
+
+.it h3 {
+  position: relative;
+  color: var(--eerie-black);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  padding-left: 15px;
+}
+
+.it h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;               
+  height: 100%;             
+  background-color: #005396; 
+  border-radius: 2px;       
+}
+
+
+/* 行程表 */
+.voyage-box .sheet {
+  padding: 20px 0 10px;
+}
+
+.voyage-px{
+  justify-content: center;
+  margin: auto;
+}
+
+.left {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* 標題列 */
+.template3.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #BEBEBE;
+  text-align: center;
+  color: #846B5A;
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+/* 內容列 */
+.template3 {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #BEBEBE;
+  text-align: left;
+  color: var(--sonic-silver);
+
+  line-height: 25px;
+}
+
+/* 交替底色 */
+.template3:nth-child(even):not(.header) {
+  background-color: #f9f9f9;
+}
+
+/* 日期欄 */
+.template3 span:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--eerie-black);
+    white-space: nowrap;
+}
+
+.voyage-box .text {
+  padding-top: 10px;
+}
+
+.voyage-box .text ul {
+    padding-left: 8px;  
+    list-style: none;  
+    position: relative;
+}
+
+.voyage-box .text ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--grayblue);
+}
+
+.voyage-box .text ul li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--grayblue);
+    border-radius: 50%;
+    margin-top: 10px;
+
+    flex-shrink: 0;   /* 點點不要變形 */
+}
+
+.voyage-box .map img {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .voyage-box .map {
+    margin: 30px 0 20px;
+  }
+}
+
+/* 房型 */
+.room-bg{
+    background-color: var(--dreck-gray);
+    padding: 60px 0;
+}
+
+.room-text {
+  align-items: center;
+  padding: 20px 0 40px;
+} 
+
+.room-text h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: var(--eerie-black);
+    font-weight: bold;
+    padding-bottom: 2px;
+    margin: auto 0;
+
+    font-weight: 500;
+}
+
+.room-text .line {
+    width: 3px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: var(--mitsui-blue);
+}
+
+.room-text h3 {
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    line-height: 1.5rem;
+    color: var(--eerie-black);
+    font-weight: 500;
+    margin: auto 0;
+
+}
+
+.room-box {
+  padding: 40px 0 10px;
+}
+
+.room-d {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.room-d h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--deck-blue);
+}
+
+/* 房型 價錢 */
+.type-tem {
+  margin-bottom: 15px;
+  border: 1px solid var(--sonic-silver);
+  overflow: hidden; /* 保留圓角遮罩效果 */
+  background: var(--white);
+}
+
+.type-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.type-title:hover {
+  background: #fbfeff;
+}
+
+.type-title h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--eerie-black);
+}
+
+.type-text {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background-color: var(--white);
+  font-size: 18px;
+  color: #5b5b5b;
+  line-height: 1.5;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.type-text ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.type-text ul li {
+  position: relative;
+  padding-left: 15px;
+  color: var(--davys-gray);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.type-text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: var(--davys-gray);
+  border-radius: 50%;
+}
+
+.type-center {
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) { 
+  .template3 {
+    font-size: 15px;
+  }
+
+  .template3 span:first-child {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .type-title h2 {
+    font-size: 16px;
+  }
+  .type-text {
+    font-size: 16px;
+  }
+
+  .room-box {
+    padding: 10px 0;
+  }
+
+  .room-text h2 {
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .template3 {
+    grid-template-columns: 1fr 1.5fr 0.5fr 0.6fr;
+  }
+
+  .voyage-box img {
+    padding-top: 20px;
+  }
+
+  .room-text {
+    padding: 0 0 30px;
+  } 
+
+  .room-text h2 {
+    font-size: 24px;
+  }
+
+  .room-text .line {
+    height: 30px;
+    margin: 0 14px;
+  }
+}
+
+
+/* 推薦行程 */
+.rec-bg {
+  background-color: #e0eaf1;
+}
+
+.rec-text {
+  align-items: center;
+  padding: 50px 0 40px;
+} 
+
+.rec-text h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: var(--eerie-black);
+    font-weight: bold;
+    padding-bottom: 2px;
+    margin: auto 0;
+
+    font-weight: 500;
+}
+
+.rec-text .line {
+    width: 3px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: var(--mitsui-blue);
+}
+
+.rec-text h3 {
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    line-height: 1.5rem;
+    color: var(--eerie-black);
+    font-weight: 500;
+    margin: auto 0;
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1400px) {
+  .rec-grid {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1399.98px) { 
+  .rec-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  .rec-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .rec-text h2 {
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .rec-grid {
+    grid-template-columns: 1fr;
+    padding: 2px 15px;
+    margin-bottom: 30px;
+  }
+
+   .rec-text h2 {
+    font-size: 24px;
+  }
+
+  .rec-text .line {
+    height: 30px;
+    margin: 0 14px;
+  }
+}
+
+
+.rec-card {
+  background-color: var(--mitsui-blue);
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  cursor: pointer;
+}
+
+.rec-card:hover {
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.rec-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.rec-image-wrapper img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.rec-card:hover .rec-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.rec-new {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.932);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+
+.rec-new .discount {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--mitsui-red2);
+}
+
+.rec-info {
+  padding: 15px 1.5rem 18px;
+}
+
+.rec-info h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  letter-spacing: 0.1rem;
+  line-height: 25px;
+  min-height: 50px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+.rec-info p {
+  font-size: 0.875rem;
+  color:  var(--beige);
+  margin: 0;
+
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .rec-image-wrapper img {
+    height: 12rem;
+  }
+
+  .rec-info h3 {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  .rec-info {
+    padding: 15px 0.8rem 18px;
+  }
+
+  .rec-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .rec-info h3 {
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 25px;
+    min-height: 50px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .rec-info {
+   padding: 15px 1rem 18px;
+  }
+
+  .rec-info p {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rec-info h3 {
+    padding: 0 16px;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* 航班說明 */
+.flight-notice {
+  background-color: #f3f3f3;
+  padding: 25px 30px;
+  border-radius: 6px;
+
+  width: 100%;
+  margin: 30px auto 20px;
+}
+
+.notice-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item;   
+}
+
+.notice-list li {
+  position: relative;    
+  padding-left: 28px;
+  font-size: 16px;
+  color: var(--sonic-silver);
+  line-height: 1.8;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.notice-list li::before {
+  counter-increment: item;
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  color: #444;
+}
+
+@media (min-width: 1200px) {
+  .flight-notice {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .notice-list li {
+    font-size: 15px;
+  }
+}
+
+#goTop {
+  background-image: url(../images/top.png);
+  display: none;            
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 20px;
+  right: 30px;
+  border-radius: 99rem;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+#goTop:hover {
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  #goTop {
+    bottom: 70px;
+    right: 10px;
+    opacity: 0.9;
+  } 
+}
+
