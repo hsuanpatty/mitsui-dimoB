@@ -360,6 +360,7 @@ header{
     text-align: center;
     margin: 10px auto ;
     width: 100%;
+    padding: 1rem 0.5rem;
   }
 
   .contact-address {
@@ -380,6 +381,7 @@ header{
   .contact-card {
     padding: 15px 10px 10px;
   }
+
 }
 
 
