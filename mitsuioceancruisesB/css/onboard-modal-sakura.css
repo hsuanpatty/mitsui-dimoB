@@ -239,8 +239,6 @@ input{
   padding: 2rem;
   width: min(100% - 2rem, 90ch);
   position: relative;
-
-  z-index: 99999;
 }
 
 .button-close-modal {
@@ -248,14 +246,14 @@ input{
   right: 20px;
   top: 20px;
 
-  display: flex;              /* 關鍵 */
-  justify-content: center;    /* 水平置中 */
-  align-items: center;        /* 垂直置中 */
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
 
-  font-size: 2rem;
+  font-size: 1.5rem; 
+  font-weight: 600;
   height: 40px;
   width: 40px;
-  padding-top: 2px;
   
   appearance: none;
   background-color: var(--mitsui-blue);
@@ -265,6 +263,7 @@ input{
   transition: all 0.3s;
   z-index: 999;
 }
+
 
 .button-close-modal:hover {
   transform: rotate(180deg);
@@ -430,7 +429,7 @@ input{
   }
 
 .modal__inner {
-    height: 85vh;         
+    height: auto;         
     overflow: hidden;     
     padding: 2.5rem 2rem;
     width: 100%;
@@ -438,7 +437,7 @@ input{
 }
 
 .modal-box {
-    height: calc(100vh - 160px); 
+    height: calc(70vh - 160px); 
     overflow-y: auto;            
 }
 
@@ -477,12 +476,6 @@ input{
 
 }
 
-@media (max-width: 450.98px) {
-  .modal__inner {    
-    height: 100vh;      
-    max-height: 100vh;
-  }
-}
 
 @media (min-width: 1200px) { 
   .modal-row p {
