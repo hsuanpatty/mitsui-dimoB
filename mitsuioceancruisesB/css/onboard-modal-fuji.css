@@ -232,6 +232,8 @@ input{
   padding: 2rem;
   width: min(100% - 2rem, 90ch);
   position: relative;
+
+  z-index: 99999;
 }
 
 .button-close-modal {
