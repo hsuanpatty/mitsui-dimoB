@@ -554,7 +554,6 @@ input{
     border-radius: 4px;
 }
 
-
 /* 當 .cruise-info 內部的 .cruise-highlight 是空的，直接隱藏它 */
 .cruise-info:has(.cruise-highlight:empty) .cruise-highlight {
     display: none;
@@ -570,32 +569,11 @@ input{
 .cruise-info p {
     margin-top: auto;
 }
-/* .cruise-highlight {
-    align-items: center;
-    color: white;
-    background-color: var(--mitsui-red);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    margin: 4px auto 6px;
-    padding: 6px 35px;
-    border-radius: 4px;
-    display: inline-block;
-} */
-
-
-
-
-/* 
-.cruise-highlight:empty{
-  display:none;
-} */
 
 .cruise-info p {
   font-size: 0.875rem;
   color: #555555;
   margin: 0;
-  /* 移除 text-align: center */
   line-height: 25px;
 }
 
