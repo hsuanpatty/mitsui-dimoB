@@ -455,7 +455,7 @@ input{
 
 .cruise-card {
     background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.171); /* 加入黑邊，設定為半透明黑色，質感較好 */
+    border: 1px solid rgba(0, 0, 0, 0.171); 
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.068);
     overflow: hidden;
@@ -532,17 +532,28 @@ input{
 }
 
 .cruise-highlight {
+    /* 原有設定 */
+    display: inline-block;
+    max-width: 80%;
+    box-sizing: border-box;
+    
+    /* 新增：文字強制單行顯示與隱藏設定 */
+    white-space: nowrap;      /* 強制文字不換行 */
+    overflow: hidden;         /* 超出容器範圍的內容隱藏 */
+    text-overflow: ellipsis;  /* 超出部分顯示為 ... */
+
+    /* 其他原有設定 */
     align-items: center;
     color: var(--white);
     background-color: var(--m3-blue);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1rem;
     margin: 0 auto 10px;
     padding: 6px 35px;
     border-radius: 4px;
-    display: inline-block;
 }
+
 
 /* 當 .cruise-info 內部的 .cruise-highlight 是空的，直接隱藏它 */
 .cruise-info:has(.cruise-highlight:empty) .cruise-highlight {
