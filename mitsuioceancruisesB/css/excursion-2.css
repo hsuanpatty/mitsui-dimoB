@@ -646,12 +646,20 @@ input{
   .cruise-info p {
     white-space:nowrap;
   }
+
+  .cruise-highlight { 
+    padding: 6px 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
   .cruise-info h3{
     padding: 0 8px;
     letter-spacing: 0.1rem;
+  }
+
+  .cruise-highlight { 
+    padding: 6px 20px;
   }
 }
 
