@@ -534,7 +534,7 @@ input{
 .cruise-highlight {
     align-items: center;
     color: var(--white);
-    background-color: var(--m2-blue);
+    background-color: var(--m3-blue);
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.1rem;
