@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三井海洋郵輪 MITSUI OCEAN CRUISES</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="三井海洋富士號｜台灣旅客好評如潮！船艙、餐廳、休閒空間寬敞舒適～服務貼心細緻，享受賓至如歸的款待。探索秘境跳島，實現精彩海上假期!"
+    />
+    <meta
+      name="keywords"
+      content="三井海洋郵輪,日本郵輪,巨匠旅遊,日本郵輪旅遊,Mitsui OCEAN CRUISE,富士山郵輪,日本沿岸郵輪,日本丸,三井海洋富士,豪華郵輪,奢華假期,郵輪旅遊推薦,郵輪航程,沖繩,東京,凱旋旅遊"
+    />
+
+    <!-- open graph  -->
+    <meta property="og:site_name" content="三井海洋郵輪" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="三井海洋郵輪 MITSUI OCEAN CRUISES" />
+    <meta
+      name="og:description"
+      content="三井海洋富士號｜台灣旅客好評如潮！船艙、餐廳、休閒空間寬敞舒適～服務貼心細緻，享受賓至如歸的款待。探索秘境跳島，實現精彩海上假期!"
+    />
+    <meta property="og:image" content="./images/ogp.jpg" />
+    <meta property="og:image:alt" content="三井海洋郵輪 MITSUI OCEAN CRUISES" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/rec.css" />
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+  </head>
+
+  <body>
+    <div class="overlay" data-overlay></div>
+    <div id="goTop"></div>
+    <!-- 主導航區塊 -->
+    <nav class="header-main">
+      <div class="container">
+        <a href="./mitsuioceancruises.html" class="header-logo"><img src="./images/logo/mitsul-cruises-logo.png" alt="MITSUI OCEAN CRUISES" /></a>
+      </div>
+    </nav>
+
+    <!-- 桌機選單 -->
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category">
+            <a href="./mitsuioceancruises.html" class="menu-title">首頁</a>
+          </li>
+          <li class="menu-category">
+            <a href="#" class="menu-title">船隊 <i class="fa-solid fa-angle-down fa-xs"></i></a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="./onboard-fuji.html">三井海洋富士號</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="./onboard-sakura.html">三井海洋櫻花號</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-category">
+            <a href="./excursion.html" class="menu-title">郵輪行程</a>
+          </li>
+          <li class="menu-category">
+            <a href="./download.html" class="menu-title">相關資訊</a>
+          </li>
+          <li class="menu-category">
+            <a href="./rec.html" class="menu-title">推薦行程</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 手機側邊選單 -->
+    <nav class="mobile-navigation-menu" data-mobile-menu>
+      <div class="menu-top">
+        <a href="{{首頁連結}}"><h2 class="menu-title">三井海洋郵輪</h2></a>
+        <button class="menu-close-btn" data-mobile-menu-close-btn aria-label="Close menu">
+          <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+            <path d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256z" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="./mitsuioceancruises.html" class="menu-title">首頁</a>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">船隊</p>
+            <div class="caret-btn">
+              <svg class="add-icon" viewBox="0 0 512 512" width="16" height="16" fill="none">
+                <path d="M256 112v288M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
+              </svg>
+              <svg class="remove-icon" viewBox="0 0 512 512" width="16" height="16" fill="none">
+                <path d="M112 256h288" stroke="currentColor" stroke-width="48" stroke-linecap="round" />
+              </svg>
+            </div>
+          </button>
+          <ul class="submenu-category-list">
+            <li class="submenu-category">
+              <a href="./onboard-fuji.html">三井海洋富士號</a>
+            </li>
+            <li class="submenu-category">
+              <a href="./onboard-sakura.html">三井海洋櫻花號</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <a href="./excursion.html" class="menu-title">郵輪行程</a>
+        </li>
+        <li class="menu-category">
+          <a href="./download.html" class="menu-title">相關資訊</a>
+        </li>
+        <li class="menu-category">
+          <a href="./rec.html" class="menu-title">推薦行程</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 手機底部導航 -->
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn menu-outline" data-mobile-menu-open-btn>
+        <svg viewBox="0 0 512 512" width="26" height="26">
+          <path d="M80 160h352M80 256h352M80 352h352" stroke="currentColor" stroke-width="32" fill="none" stroke-linecap="round" />
+        </svg>
+      </button>
+      <a href="./mitsuioceancruises.html" class="action-btn home-outline">
+        <svg viewBox="0 0 512 512" width="26" height="26">
+          <path
+            d="M80 212L256 64l176 148v236a20 20 0 0 1-20 20H100a20 20 0 0 1-20-20V212z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="32"
+            stroke-linejoin="round"
+          />
+          <path d="M192 448V288h128v160" fill="none" stroke="currentColor" stroke-width="32" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+
+    <header>
+      <div class="banner hidden slider">
+        <div class="banner-img">
+          <!-- 1. -->
+          <div class="banner_title">
+            <picture>
+              <source media="(max-width: 575px)" srcset="./images/rec/banner575x767-1.jpg" class="w-100 d-block" width="575" alt="鬱金香(荷蘭)" />
+              <img src="./images/rec/banner-1.jpg" class="carousel__images" alt="三井海洋郵輪" />
+            </picture>
+
+            <div class="swiper-slide-caption">
+              <h3>推薦行程</h3>
+            </div>
+          </div>
+          <!-- 2. -->
+          <div class="banner_title">
+            <picture>
+              <source media="(max-width: 575px)" srcset="./images/rec/banner575x767-2.jpg" class="w-100 d-block" width="575" alt="三井海洋郵輪" />
+              <img src="./images/rec/banner-2.jpg" class="carousel__images" alt="三井海洋郵輪" />
+            </picture>
+
+            <div class="swiper-slide-caption">
+              <h3>推薦行程</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 表頭 標籤 -->
+    <div>
+      <div class="container">
+        <div class="breadcrumb-wrapper">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a href="./mitsuioceancruises.html">首頁</a>
+            </li>
+            <li class="breadcrumb-item current">推薦行程</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <main class="mainVisual-py">
+      <!-- 推薦 主題 -->
+
+      <!-- 1. 賞櫻 -->
+      <section class="mainVisual-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- 左：文字 -->
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <div class="mainVisual__box">
+                <h3>
+                  賞櫻
+                  <span>與櫻花相遇 〜 開啟春日郵輪旅程</span>
+                </h3>
+
+                <p>
+                  春日櫻花綻放，展開一場與日本的浪漫邂逅。<br />
+                  搭乘三井海洋郵輪，悠遊日本各地港灣， 從海上迎接春日美景，感受櫻花與海洋交織的優雅旅程。
+                </p>
+
+                <!-- 主題介紹按鈕 -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="theme-detail-btn">
+                  主題介紹
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- 右：圖片 -->
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <div class="themedata-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/rec/themedata-1.jpg" alt="賞櫻" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 賞楓 -->
+      <section class="mainVisual-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- 左：圖片 -->
+            <div class="col-12 col-lg-7 order-1 order-lg-1">
+              <div class="themedata-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/rec/themedata-2.jpg" alt="賞楓" />
+                </a>
+              </div>
+            </div>
+
+            <!-- 右：文字 -->
+            <div class="col-12 col-lg-5 order-2 order-lg-2">
+              <div class="mainVisual__box">
+                <h3>
+                  賞楓
+                  <span>秋楓盛放・優雅啟航</span>
+                </h3>
+
+                <p>
+                  秋日楓紅染上日本大地，搭乘三井海洋郵輪， 感受日本式細膩而溫暖的待客之道。<br />
+                  在舒適雅緻的空間中，享受一趟悠然愜意的賞楓旅程。
+                </p>
+
+                <!-- 主題介紹按鈕 -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="theme-detail-btn">
+                  主題介紹
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 祭典 -->
+      <section class="mainVisual-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- 左：文字 -->
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <div class="mainVisual__box">
+                <h3>
+                  祭典
+                  <span>阿波舞・煙火璀璨盛夏</span>
+                </h3>
+
+                <p>
+                  感受日本夏日祭典的熱情與魅力，走訪四國欣賞熱情奔放的阿波舞。 更從三井海洋郵輪甲板上，欣賞館山灣花火大會，
+                  讓璀璨煙火在夜空與海面間綻放，沉浸於浪漫的夏日風情。
+                </p>
+
+                <!-- 主題介紹按鈕 -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="theme-detail-btn">
+                  主題介紹
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- 右：圖片 -->
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <div class="themedata-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/rec/themedata-3.jpg" alt="青森睡魔祭" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 花火節 -->
+      <section class="mainVisual-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- 左：圖片 -->
+            <div class="col-12 col-lg-7 order-1 order-lg-1">
+              <div class="themedata-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/rec/themedata-4.jpg" alt="熊野大花火大會" />
+                </a>
+              </div>
+            </div>
+
+            <!-- 右：文字 -->
+            <div class="col-12 col-lg-5 order-2 order-lg-2">
+              <div class="mainVisual__box">
+                <h3>
+                  花火節
+                  <span>熊野花火・南國跳島</span>
+                </h3>
+
+                <p>
+                  親臨擁有三百多年歷史的熊野大花火大會，<br />
+                  感受煙火於海面與壯麗岩壁間震撼綻放的絕美景象。<br />
+                  串聯鹿兒島、種子島與韓國濟州島，享受祭典熱情與海島風情。
+                </p>
+
+                <!-- 主題介紹按鈕 -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="theme-detail-btn">
+                  主題介紹
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 瀨戶內海 -->
+      <section class="mainVisual-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- 左：文字 -->
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <div class="mainVisual__box">
+                <h3>
+                  瀨戶內海
+                  <span>島嶼之間・悠然航行</span>
+                </h3>
+
+                <p>
+                  穿梭瀨戶內海群島，欣賞島嶼與海洋交織的絕美風景。<br />
+                  沿途探索港町文化、藝術與自然景觀， 感受瀨戶內海獨有的悠閒魅力。 在海上慢慢旅行，享受日本最愜意的島嶼時光。
+                </p>
+
+                <!-- 主題介紹按鈕 -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="theme-detail-btn">
+                  主題介紹
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- 右：圖片 -->
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <div class="themedata-box">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/rec/themedata-5.jpg" alt="瀨戶內海" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <div class="footer-nav">
+        <div class="container">
+          <div class="footer-nav-list mitsul-logo-2">
+            <img src="./images/logo/mitsul-cruises-logo2.png" alt="MITSUI OCEAN CRUISES" />
+          </div>
+
+          <ul class="footer-nav-list footer-px">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">三井海洋郵輪 台灣總代理</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">TEL：(02)2509-0838</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">FAX：(02)2518-5488</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">E-mail：judyyu@luxetravel.com.tw</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">10487台北市中山區南京東路三段101號9樓</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">Copyright &copy; <a href="#">Artisan</a> all rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery 必須最先載入 -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/script2.js"></script>
+    <script src="./js/theme2.js"></script>
+  </body>
+</html>
