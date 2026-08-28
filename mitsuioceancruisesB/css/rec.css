@@ -61,6 +61,7 @@ body {
     --transition-timing: .2s ease;
 }
 
+
 /* =========================
    Modal Content Box
 ========================= */
@@ -78,7 +79,6 @@ body {
 /* Modal < 576px */
 
 @media (max-width: 575.98px) {
-
     .modal-content-box {
         max-width: 100%;
     }
@@ -88,7 +88,6 @@ body {
 /* Modal ≥576px */
 
 @media (min-width: 576px) {
-
     .modal-content-box {
         max-width: 600px;
     }
@@ -98,7 +97,6 @@ body {
 /* Modal ≥768px */
 
 @media (min-width: 768px) {
-
     .modal-content-box {
         max-width: 750px;
     }
@@ -108,7 +106,6 @@ body {
 /* Modal ≥992px */
 
 @media (min-width: 992px) {
-
     .modal-content-box {
         max-width: 960px;
     }
@@ -118,7 +115,6 @@ body {
 /* Modal ≥1200px */
 
 @media (min-width: 1200px) {
-
     .modal-content-box {
         max-width: 1140px;
     }
@@ -228,7 +224,6 @@ header {
 /* ≥576px */
 
 @media (min-width: 576px) {
-
     .itinerary-section .container {
         max-width: 540px;
     }
@@ -238,7 +233,6 @@ header {
 /* ≥768px */
 
 @media (min-width: 768px) {
-
     .itinerary-section .container {
         max-width: 750px;
     }
@@ -248,7 +242,6 @@ header {
 /* ≥992px */
 
 @media (min-width: 992px) {
-
     .itinerary-section .container {
         max-width: 960px;
     }
@@ -258,7 +251,6 @@ header {
 /* ≥1200px */
 
 @media (min-width: 1200px) {
-
     .itinerary-section .container {
         max-width: 1180px;
     }
@@ -268,7 +260,6 @@ header {
 /* ≥1400px */
 
 @media (min-width: 1400px) {
-
     .itinerary-section .container {
         max-width: 1320px;
     }
@@ -278,7 +269,6 @@ header {
 /* ≥1600px */
 
 @media (min-width: 1600px) {
-
     .itinerary-section .container {
         max-width: 1370px;
     }
@@ -305,17 +295,28 @@ header {
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.schedule__box h3 span {
+
+/* =========================
+   第二個 h3
+   原本 span 的樣式
+========================= */
+
+.schedule__box h3:nth-of-type(2) {
     display: block;
-    margin-top: 12px;
+    margin-top: 5px;
     color: var(--grayblue);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
 
 /* =========================
    Main Visual
@@ -462,8 +463,11 @@ header {
         font-size: 32px;
     }
 
-    .schedule__box h3 span {
+    /* 第二個 h3 */
+    .schedule__box h3:nth-of-type(2) {
         font-size: 18px;
+        margin-top: 12px;
+        line-height: 1.8;
     }
 
     .schedule__box p {
@@ -517,9 +521,11 @@ header {
         line-height: 1.5;
     }
 
-    .schedule__box h3 span {
+    /* 第二個 h3 */
+    .schedule__box h3:nth-of-type(2) {
         font-size: 16px;
         margin-top: 6px;
+        line-height: 1.8;
     }
 
     .schedule__box p {
@@ -552,8 +558,11 @@ header {
         font-size: 24px;
     }
 
-    .schedule__box h3 span {
+    /* 第二個 h3 */
+    .schedule__box h3:nth-of-type(2) {
         font-size: 15px;
+        margin-top: 6px;
+        line-height: 1.8;
     }
 
     .schedule__box p {
@@ -577,8 +586,11 @@ header {
         font-size: 20px;
     }
 
-    .schedule__box h3 span {
+    /* 第二個 h3 */
+    .schedule__box h3:nth-of-type(2) {
         font-size: 14px;
+        margin-top: 6px;
+        line-height: 1.8;
     }
 
     .schedule__box p {
@@ -599,16 +611,21 @@ header {
     gap: 10px;
     padding: 10px 24px;
     margin-top: 15px;
+
     border: 1px solid #333;
     border-radius: 30px;
+
     background: #fff;
     color: #333;
+
     font-family: 'GenKiMin-R', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.4;
+
     text-decoration: none;
+
     transition:
         background 0.3s ease,
         color 0.3s ease,
