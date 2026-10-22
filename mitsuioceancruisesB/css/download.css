@@ -71,6 +71,19 @@ header{
 }
 
 
+.m-cms-horizon {
+  border-bottom: 0px;
+  border-top: 1px solid rgb(230, 230, 230);
+  margin: 72px 0px 48px;
+}
+
+@media (min-width: 768px) {
+    .m-cms-horizon {
+        margin: 50px 0px;
+    }
+}
+
+
 /*頁頭標籤 */
 .breadcrumb-wrapper {
   padding: 20px 0 5px;
@@ -230,6 +243,38 @@ header{
 }
 
 
+.m-horizon-d {
+  margin: 40px 0;
+}
+
+/* icon 連結 */
+
+/* 預設不顯示右側 icon */
+.m-download-link__link::after {
+  content: none;
+}
+
+/* 只有「加入會員」顯示外部連結 icon */
+.m-download-link__link--member::after {
+  content: "\f08e";
+  font-family: "FontAwesome";
+  font-size: 18px;
+  color: var(--deck-blue);
+  margin-left: auto;
+  padding-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.25s ease;
+}
+
+/* 滑鼠移過去 */
+.m-download-link__link--member:hover::after {
+  color: var(--spanish-gray);
+}
+
+/* 分隔線間距 */
 .m-horizon-d {
   margin: 40px 0;
 }
