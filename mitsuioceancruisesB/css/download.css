@@ -74,13 +74,7 @@ header{
 .m-cms-horizon {
   border-bottom: 0px;
   border-top: 1px solid rgb(230, 230, 230);
-  margin: 72px 0px 48px;
-}
-
-@media (min-width: 768px) {
-    .m-cms-horizon {
-        margin: 50px 0px;
-    }
+  margin: 30px 00 0;
 }
 
 
