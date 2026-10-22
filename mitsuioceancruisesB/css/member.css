@@ -1,0 +1,1083 @@
+/* =========================================================
+   三井海洋俱樂部｜完整且無重複的優化 CSS
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "GenKiMin-R";
+  src: url("../fonts/GenKiMin2PJP-R.otf") format("opentype");
+}
+
+body {
+  font-family: "GenKiMin-R", sans-serif;
+}
+
+:root {
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --mitsui-blue: #005396;
+  --deck-blue: #083050;
+  --m2-blue: #005396;
+  --m3-blue: #0967b4;
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --mitsui-red: #EB4343;
+  --mitsui-red2: #FF0707;
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+  --brown: #D7C5AE;
+  --dreck-gray: #F9F9F9;
+  --search-blue: #F2F6FA;
+  --beige: #FFE9CD;
+  --grayblue: #637787;
+
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: .938rem;
+  --fs-7: .875rem;
+  --fs-8: .813rem;
+  --fs-9: .75rem;
+  --fs-10: .688rem;
+  --fs-11: .625rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  --border-radius-medium: 10px;
+  --border-radius-small: 5px;
+
+  --transition-timing: .2s ease;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+li,
+section,
+header {
+  font-family: "GenKiMin-R";
+  letter-spacing: 1px;
+}
+
+.m-cms-horizon {
+  border-bottom: 0;
+  border-top: 1px solid rgb(230, 230, 230);
+  margin: 72px 0 48px;
+}
+
+@media (min-width: 768px) {
+  .m-cms-horizon {
+    margin: 50px 0;
+  }
+}
+
+.border-title {
+  display: none;
+}
+
+/* 頁頭標籤 */
+.breadcrumb-wrapper {
+  padding: 20px 0 5px;
+  font-size: 16px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.breadcrumb-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--m2-blue);
+  text-decoration: none;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 12px;
+  color: #999;
+  margin: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb-item.current {
+  color: var(--m2-blue);
+  font-weight: 500;
+}
+
+/* ========================================
+   錨點定位｜避免標題被遮住
+======================================== */
+
+#anc-1,
+#anc-2,
+#anc-3,
+#anc-4 {
+  scroll-margin-top: 100px;
+  scroll-behavior: auto;
+}
+
+/* 全頁平滑滑動 */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* =========================================================
+   01～15｜頁面整體與各模組基礎樣式
+========================================================= */
+
+main .contact-center {
+  align-items: flex-start;
+  color: #292929;
+  font-family: "Noto Sans JP", "Noto Sans TC", "Yu Gothic", "Meiryo", "Microsoft JhengHei", sans-serif;
+}
+
+main .contact-center > [class*="col-"] {
+  min-width: 0;
+}
+
+main .contact-center > .col-xl-9 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .contact-center .m-pb {
+  padding-bottom: 30px;
+}
+
+main .contact-center .dl-box {
+  width: 100%;
+  overflow-wrap: break-word;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 20px 0 0;
+}
+
+main .contact-center .dl-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+main .contact-center .dl-box a {
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* 區塊標題 */
+main .contact-center .contact_title {
+  position: relative;
+}
+
+main .contact-center .contact_title h3 {
+  margin: 0;
+  color: #171717;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 1.45;
+}
+
+main .contact-center .contact_title h3 span {
+  font-weight: 400;
+  margin-left: 12px;
+  color: #555;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  letter-spacing: .08em;
+  display: block;
+  width: fit-content;
+  margin: 5px 0 0;
+  vertical-align: initial;
+}
+
+/* 三井海洋俱樂部主標題 */
+.club-main-title {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.club-main-title span {
+  margin: auto;
+}
+
+main .contact-center .contact_title h3.club-main-title {
+  font-size: 28px;
+}
+
+main .contact-center .contact_title h3.club-main-title span {
+  font-size: 20px;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  main .contact-center .contact_title h3.club-main-title {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .contact-center .contact_title h3.club-main-title {
+    font-size: 46px;
+  }
+
+  main .contact-center .contact_title h3.club-main-title span {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+}
+
+/* 介紹文字與主視覺 */
+main .contact-center .m-cms-layout-media {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+main .contact-center .m-cms-layout-media__textContainer {
+  width: 100%;
+}
+
+main .contact-center .m-cms-text-lead__item {
+  margin: 0;
+  line-height: 1.9;
+  color: #222;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+main .contact-center .m-cms-text {
+  width: 100%;
+}
+
+main .contact-center .m-cms-text__item {
+  margin: 0 0 18px;
+  font-weight: 400;
+  color: #444;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+
+/* 錨點導覽 */
+main .contact-center .m-anchor-linkType2 {
+  width: 100%;
+  padding: 0;
+  margin: 18px 0 24px;
+}
+
+main .contact-center .m-anchor-linkType2 > .row {
+  row-gap: 0;
+}
+
+main .contact-center .m-anchor-linkType2__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  min-height: 64px;
+  padding: 16px 14px;
+  color: #222;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 0;
+  text-decoration: none;
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+main .contact-center .m-anchor-linkType2__link::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+  right: 14px;
+  left: 14px;
+  height: 2px;
+  background: #07549a;
+}
+
+main .contact-center .m-anchor-linkType2__link:hover::after {
+  transform: scaleX(1);
+}
+
+main .contact-center .m-anchor-linkType2__link:hover {
+  color: #07549a;
+  background: #f7f9fb;
+  border-color: #b8c9d8;
+}
+
+main .contact-center .m-anchor-linkType2__text {
+  margin: 0;
+  line-height: 1.7;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+main .contact-center [id^="anc-1"],
+main .contact-center [id^="anc-2"],
+main .contact-center [id^="anc-3"],
+main .contact-center [id^="anc-4"] {
+  scroll-margin-top: 100px;
+}
+
+/* 分隔線 */
+main .contact-center .m-cms-horizon {
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  opacity: 1;
+  margin: 64px 0;
+}
+
+main .contact-center .m-horizon-d {
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  opacity: 1;
+  margin: 28px 0;
+}
+
+/* 特色標題與其他 */
+.feature-box {
+  padding: 0 20px 20px;
+}
+
+main .contact-center .m-cms-heading-type3 {
+  margin: 20px 0 30px;
+  color: #3b3b3b;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.1rem;
+}
+
+main .contact-center .m-cms-heading-type3__heading {
+  display: inline;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+main .contact-center .m-cms-heading-type3 + .m-cms-text {
+  margin-bottom: 8px;
+}
+
+/* 備註清單 */
+main .contact-center .m-cms-list-note {
+  margin: 50px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .contact-center .m-cms-list-note__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  list-style: none;
+  color: #666;
+}
+
+main .contact-center .m-cms-list-note__mark {
+  flex: 0 0 auto;
+  min-width: 18px;
+  font-size: 14px;
+  color: #333;
+}
+
+main .contact-center .m-cms-list-note__text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 圖片與媒體 */
+main .contact-center .m-cms-media {
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+main .contact-center .m-cms-media__item {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+main .contact-center .dl-box > .m-cms-media {
+  margin: 20px 0;
+}
+
+/* 第四層標題 */
+main .contact-center .m-cms-heading-type4 {
+  margin: 0 0 15px;
+  line-height: 1.7;
+  color: #222;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+main .contact-center .m-cms-heading-type4__heading {
+  display: inline;
+  color: inherit;
+  font: inherit;
+}
+
+/* 會員條款連結 */
+main .contact-center .m-cms-link-type2 {
+  margin: 20px 0 28px;
+}
+
+main .contact-center .m-cms-link-type2__link {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-decoration: none;
+  padding: 13px 16px;
+  color: #07549a;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 0;
+}
+
+main .contact-center .m-cms-link-type2__link::before {
+  flex: 0 0 auto;
+  content: "↗";
+  color: #07549a;
+}
+
+main .contact-center .m-cms-link-type2__link:hover {
+  color: #063f73;
+  background: #f6f8fa;
+  border-color: #9eb5c9;
+}
+
+main .contact-center .m-cms-link-type2__text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 主要按鈕 */
+main .contact-center .m-cms-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 65px 0 0;
+  gap: 14px;
+}
+
+main .contact-center .m-cms-button-list--center {
+  justify-content: center;
+}
+
+main .contact-center a.m-cms-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+  min-width: 240px;
+  min-height: 56px;
+  padding: 15px 24px;
+  color: #fff;
+  background: #07549a;
+  border: 1px solid #07549a;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .025em;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+main .contact-center a.m-cms-button::after {
+  content: "→";
+  transition: transform 0.25s ease;
+  font-size: 17px;
+}
+
+main .contact-center a.m-cms-button:hover::after {
+  transform: translateX(4px);
+}
+
+main .contact-center a.m-cms-button:hover {
+  color: #fff;
+  background: #063f73;
+  border-color: #063f73;
+}
+
+/* 註冊／登入教學手風琴 */
+main .contact-center .moc-guide-toggle {
+  margin: 0 0 12px;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 0;
+}
+
+main .contact-center .moc-guide-summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  line-height: 1.7;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color 0.25s ease;
+  min-height: 62px;
+  padding: 17px 22px;
+  color: #222;
+  background: #f7f7f7;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .contact-center .moc-guide-summary:hover {
+  background: #f0f4f7;
+}
+
+main .contact-center .moc-guide-summary::-webkit-details-marker {
+  display: none;
+}
+
+main .contact-center .moc-guide-summary::marker {
+  content: "";
+}
+
+main .contact-center .moc-guide-icon {
+  position: relative;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+}
+
+main .contact-center .moc-guide-icon::before,
+main .contact-center .moc-guide-icon::after {
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  width: 14px;
+  height: 1px;
+  content: "";
+  background: #07549a;
+}
+
+main .contact-center .moc-guide-icon::after {
+  transform: rotate(90deg);
+  transition: transform 0.25s ease;
+}
+
+main .contact-center .moc-guide-toggle[open] .moc-guide-icon::after {
+  transform: rotate(0deg);
+}
+
+main .contact-center .moc-guide-toggle[open] .moc-guide-summary {
+  color: #222;
+  background: #f1f5f8;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+main .contact-center .moc-guide-content {
+  padding: 26px 24px 22px;
+}
+
+main .contact-center .moc-guide-content > p {
+  margin: 0 0 18px;
+  color: #444;
+  font-size: 18px;
+  line-height: 2;
+}
+
+main .contact-center .moc-guide-content .m-cms-media {
+  margin: 18px 0 28px;
+  padding: 0;
+  background: #fff;
+  border: 0;
+}
+
+main .contact-center .moc-guide-content .m-cms-media__item {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 下載連結 */
+main .contact-center .m-download-link {
+  margin: 18px 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+main .contact-center .m-download-link__item {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+main .contact-center .m-download-link__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  padding: 15px 18px;
+  color: #222;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 0;
+}
+
+main .contact-center .m-download-link__link::before {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "↗";
+  font-size: 15px;
+  color: #fff;
+  background: #07549a;
+  border-radius: 0;
+}
+
+main .contact-center .m-download-link__link:hover {
+  color: #07549a;
+  background: #f7f9fb;
+  border-color: #b8c9d8;
+}
+
+main .contact-center .m-download-link__text {
+  flex: 1;
+  margin: 0;
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 相關下載區塊 */
+main .contact-center .m-cms-layout-content__head {
+  height: 100%;
+  padding: 12px 0;
+}
+
+main .contact-center .m-cms-heading-type2 {
+  margin: 0;
+  line-height: 1.7;
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main .contact-center .m-cms-heading-type2__heading {
+  display: inline;
+  color: inherit;
+  font: inherit;
+}
+
+main .contact-center .m-cms-layout-content__item {
+  min-width: 0;
+}
+
+main .contact-center .m-cms-layout-content__item .m-download-link {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   三井海洋俱樂部｜主視覺排列（電腦版：文字在左、圖片在右）
+========================================================= */
+
+@media (min-width: 768px) {
+  main .contact-center .dl-box .m-cms-layout-media,
+  main .contact-center .dl-box .m-cms-layout-media--rowReversePC {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* 文字欄位在左 (order: 1) */
+  main .contact-center .m-cms-layout-media--rowReversePC .m-cms-layout-media__content,
+  main .contact-center .dl-box .m-cms-layout-media__content {
+    order: 1;
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+
+  /* 圖片欄位在右 (order: 2) */
+  main .contact-center .m-cms-layout-media--rowReversePC .m-cms-layout-media__media,
+  main .contact-center .dl-box .m-cms-layout-media__media {
+    order: 2;
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+}
+
+/* 圖片依容器等比例顯示 */
+main .contact-center .m-cms-layout-media__media .m-cms-media {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+main .contact-center .m-cms-layout-media__media .m-cms-media__item {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   平板與手機版自適應 (RWD)
+========================================================= */
+
+@media (max-width: 991.98px) {
+  main .contact-center .moc-guide-content {
+    padding: 22px 20px 18px;
+  }
+
+  main .contact-center .m-cms-layout-media {
+    gap: 25px;
+  }
+
+  main .contact-center .m-anchor-linkType2__link {
+    min-height: 62px;
+  }
+
+  main .contact-center .contact_title h3 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main .contact-center .m-pb {
+    padding-bottom: 0;
+  }
+
+  main .contact-center .contact_title h3 {
+    font-size: 26px;
+    line-height: 1.65;
+    padding: 60px 0 0;
+  }
+
+  main .contact-center .contact_title h3#anc-1 {
+    padding: 10px 0 0;
+  }
+
+  main .contact-center .contact_title h3 span {
+    display: inline-block;
+    margin: 5px 0 0 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  main .contact-center .border-title {
+    width: 42px;
+    margin-top: 12px;
+  }
+
+  main .contact-center .dl-box {
+    font-size: 16px;
+    padding: 20px 0 0;
+  }
+
+  main .contact-center .m-cms-text__item {
+    font-size: 16px;
+    line-height: 1.95;
+    margin: 0;
+  }
+
+  main .contact-center .dl-box p {
+    margin: 10px 0 0;
+  }
+
+  main .contact-center .m-cms-text-lead__item {
+    font-size: 20px;
+  }
+
+  /* 手機版改為圖片在上、文字在下 */
+  main .contact-center .dl-box > .m-cms-layout-media,
+  main .contact-center .dl-box .m-cms-layout-media--rowReversePC {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  main .contact-center .m-cms-layout-media__media,
+  main .contact-center .m-cms-layout-media__content {
+    order: initial;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  main .contact-center .m-anchor-linkType2 {
+    margin-top: 0;
+  }
+
+  main .contact-center .m-anchor-linkType2 > .row {
+    row-gap: 8px;
+  }
+
+  main .contact-center .m-anchor-linkType2__link {
+    min-height: 52px;
+    padding: 12px 9px;
+  }
+
+  main .contact-center .m-anchor-linkType2__text {
+    font-size: 20px;
+  }
+
+  main .contact-center .m-cms-horizon {
+    margin: 28px 0;
+  }
+
+  main .contact-center .m-horizon-d {
+    margin: 20px 0;
+  }
+
+  main .contact-center .m-cms-heading-type3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .feature-box {
+    padding: 0 15px;
+  } 
+
+  main .contact-center .m-cms-heading-type4 {
+    font-size: 22px;
+  }
+
+  main .contact-center .m-cms-list-note {
+    margin: 16px 0 22px;
+  }
+
+  main .contact-center .m-cms-list-note__item {
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  main .contact-center .m-cms-list-note__mark {
+    font-size: 16px;
+  }
+
+
+  main .contact-center .m-cms-button-list {
+    margin: 22px 0;
+  }
+
+  main .contact-center a.m-cms-button {
+    width: 100%;
+    max-width: 340px;
+    min-width: 0;
+  }
+
+  main .contact-center .moc-guide-summary {
+    min-height: 56px;
+    padding: 14px 15px;
+    font-size: 20px;
+  }
+
+  main .contact-center .moc-guide-content {
+    padding: 19px 14px 15px;
+  }
+
+  main .contact-center .moc-guide-content .m-cms-media {
+    padding: 6px;
+    margin: 15px 0 22px;
+  }
+
+  main .contact-center .m-download-link__link {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  main .contact-center .m-download-link__text {
+    font-size: 13px;
+  }
+
+  main .contact-center .m-cms-layout-content__head {
+    padding: 8px 0 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main .contact-center .m-cms-heading-type3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  main .contact-center .dl-box {
+    padding: 10px 0 0;
+  }
+
+  main .contact-center .contact_title h3 {
+    padding: 20px 0 0;
+  }
+
+  main .contact-center .contact_title h3#anc-1,
+  main .contact-center .contact_title h3#anc-2,
+  main .contact-center .contact_title h3#anc-3,
+  main .contact-center .contact_title h3#anc-4 {
+    padding: 10px 0 0;
+  }
+
+  main .contact-center .m-cms-layout-media {
+    margin: 0;
+  }
+
+  main .contact-center .contact_title h3 { 
+    font-size: 24px;
+  }
+
+  main .contact-center .m-cms-horizon {
+    margin: 15px 0;
+  }
+
+  main .contact-center .dl-box > .m-cms-media {
+    margin: 10px 0 20px;
+  }
+
+  main .contact-center .contact_title h3 span {
+    margin: 0;
+  }
+
+}
+
+/* =========================================================
+   三井海洋俱樂部｜兩個版型依 HTML 原本順序排列
+   第一個：HTML 圖片在前、文字在後 → 左圖右文字
+   第二個：HTML 文字在前、圖片在後 → 左文字右圖
+   不需新增 HTML class，也不影響其他內容
+========================================================= */
+
+@media (min-width: 768px) {
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC > .m-cms-layout-media__media,
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC > .m-cms-layout-media__content {
+    order: 0 !important;
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+}
+
+/* 手機版：兩個區塊都改為圖片在上、文字在下 */
+@media (max-width: 767.98px) {
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC > .m-cms-layout-media__media {
+    order: 0 !important;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  main .contact-center .m-cms-layout-media.m-cms-layout-media--rowReversePC > .m-cms-layout-media__content {
+    order: 1 !important;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+
+
+/* =========================================================
+   其他通用元件（回到頂端與動態減量）
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  main .contact-center *,
+  main .contact-center *::before,
+  main .contact-center *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+#goTop {
+  background-image: url(../images/top.png);
+  display: none;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 20px;
+  right: 30px;
+  border-radius: 99rem;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+#goTop:hover {
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  #goTop {
+    bottom: 70px;
+    right: 10px;
+    opacity: 0.9;
+  }
+}
