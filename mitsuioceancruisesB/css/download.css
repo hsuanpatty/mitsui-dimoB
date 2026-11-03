@@ -74,7 +74,7 @@ header{
 .m-cms-horizon {
   border-bottom: 0px;
   border-top: 1px solid rgb(230, 230, 230);
-  margin: 30px 00 0;
+  margin: 35px 00 0;
 }
 
 
@@ -140,48 +140,148 @@ header{
 }
 
 /* 下載 */
+
 .contact_title {
   padding: 50px 0 10px;
 }
+
 .contact_title h3 {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 38px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
 }
 
-.contact_title h3>span {
-    font-size: 16px;
-    color: var(--davys-gray);
-    letter-spacing: 0.05rem;
+.contact_title h3 > span {
+  font-size: 16px;
+  color: var(--davys-gray);
+  letter-spacing: 0.05rem;
 }
 
+/* ===============================
+   CMS 標題｜圖片在上、文字在下
+================================ */
+
+.m-cms-layout-content__head {
+  width: 100%;
+}
+
+/* 標題文字 */
 .m-cms-heading-type2__heading {
   font-size: 1.4rem;
   line-height: 1.2;
   margin-bottom: 0.5em;
   font-weight: 500;
-
   letter-spacing: 0.05rem;
 }
 
-.m-cms-heading-type3__heading {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.5em;
+/* ===============================
+   桌機版｜1200px 以上
+   圖片置中、文字在下
+================================ */
+
+@media (min-width: 1200px) {
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 75px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2 img {
+    position: absolute;
+    top: 0;
+    left: 33%;
+    transform: translateX(-50%);
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    margin: 0;
+  }
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2__heading {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-align: left;
+  }
 }
 
+/* ===============================
+   1200px 以下
+   左圖、右文字｜水平排列不換行
+================================ */
+
+@media (max-width: 1199.98px) {
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    padding-top: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2 img {
+    position: static;
+    transform: none;
+    display: block;
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    flex: 0 0 90px;
+    margin: 0;
+  }
+
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2__heading {
+    display: block;
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-align: left;
+  }
+}
+
+/* @media (max-width: 767.98px) {
+  .m-cms-layout-content__head:has(.m-cms-heading-type2 img) .m-cms-heading-type2 {
+    margin: 0 0 15px;
+  }
+} */
+
+/* ===============================
+   內容標題間距
+================================ */
+
 .m-cms-layout-content__item h3:nth-of-type(1) {
-    margin-bottom: 2em; 
+  margin-bottom: 2em;
 }
 
 .m-cms-layout-content__item h3:nth-of-type(2) {
-    margin: 2em 0; 
+  margin: 2em 0;
 }
-
 
 /* ===============================
    Download Link
 ================================ */
+
 .m-download-link {
   list-style: none;
   padding-left: 0;
@@ -192,7 +292,7 @@ header{
   margin-bottom: 0.5em;
 }
 
-.m-download-link__link{
+.m-download-link__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,55 +300,52 @@ header{
   border-bottom: 1px solid var(--spanish-gray);
   color: var(--eerie-black);
   text-decoration: none;
-  transition: 0.3s cubic-bezier(0.25,0.8,0.25,1);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.m-download-link__item:first-child .m-download-link__link{
+.m-download-link__item:first-child .m-download-link__link {
   padding-top: 0;
 }
 
-
 .m-download-link__link:hover {
-    color: var(   --spanish-gray);
+  color: var(--spanish-gray);
 }
 
+/* 下載文字 */
 .m-download-link__text {
-  font-size: 18px;  
+  font-size: 18px;
   margin: 0;
-  word-break: break-word; /* 長文字換行 */
+  word-break: break-word;
   line-height: 30px;
   letter-spacing: 0.1rem;
 }
 
-/* 下載 icon 固定右側 */
+/* ===============================
+   預設：下載 icon
+================================ */
+
 .m-download-link__link::after {
   content: "\f0ed";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-size: 18px;
   color: var(--deck-blue);
   margin: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.25s ease;
 }
 
+/* 下載 icon hover */
 .m-download-link__link:hover::after {
-    color: var(--spanish-gray);
+  color: var(--spanish-gray);
 }
 
+/* ===============================
+   會員指南：外部連結 icon
+================================ */
 
-.m-horizon-d {
-  margin: 40px 0;
-}
-
-/* icon 連結 */
-
-/* 預設不顯示右側 icon */
-.m-download-link__link::after {
-  content: none;
-}
-
-/* 只有「加入會員」顯示外部連結 icon */
 .m-download-link__link--member::after {
   content: "\f08e";
   font-family: "FontAwesome";
@@ -263,18 +360,45 @@ header{
   transition: color 0.25s ease;
 }
 
-/* 滑鼠移過去 */
+/* 外部連結 hover */
 .m-download-link__link--member:hover::after {
   color: var(--spanish-gray);
 }
 
-/* 分隔線間距 */
+/* ===============================
+   分隔線間距
+================================ */
+
 .m-horizon-d {
   margin: 40px 0;
 }
- 
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .m-horizon-d {
+    margin: 20px 0;
+  }
+}
+
+/* ===============================
+   手機版
+================================ */
 
 @media (max-width: 575.98px) {
+
+  .contact_title {
+    padding: 30px 0 10px;
+  }
+
+  .contact_title h3 {
+    font-size: 24px;
+  }
+
   .m-download-link {
     padding-top: 10px;
   }
@@ -283,28 +407,17 @@ header{
     font-size: 16px;
   }
 
-
   .m-cms-layout-content__item h3:nth-of-type(1) {
-    margin: 1rem 0; 
+    margin: 1rem 0;
   }
 
   .m-cms-layout-content__item h3:nth-of-type(2) {
-    margin: 1rem 0; 
+    margin: 1rem 0;
   }
 
-  .m-cms-heading-type2__heading {
-    font-size: 1.4rem;
-    margin-bottom: 0;
-  }
-
-  .m-horizon-d {
-    margin: 20px 0;
-  }
-
-  .contact_title h3 {
-    font-size: 24px;
-  }
 }
+
+
 
 /* 合作夥伴 */
 .contact-center {
